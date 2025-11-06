@@ -1274,7 +1274,7 @@ input[type="radio"]:focus, input[type="checkbox"]:focus { outline:1px solid #819
 textarea { border:1px solid #e9e9e9; padding:5px; box-sizing:border-box; font-size:12px; appearance:none; -webkit-appearance:none; -webkit-transition:border linear 1s; transition:border linear 1s; }
 input[type="text"]:focus { border:1px solid #fff; border-bottom:2px solid #8190a0; }
 
-select { background:url(/widesign/img/arrow_black.png) no-repeat right 5px center; min-width:70px; padding:0 20px 0 5px !important; background-size:6px !important; appearance:none; -webkit-appearance:none; }
+select { background:url(http://osanedu.wiz-wig.co.kr/widesign/img/arrow_black.png) no-repeat right 5px center; min-width:70px; padding:0 20px 0 5px !important; background-size:6px !important; appearance:none; -webkit-appearance:none; }
 select::-ms-expand { opacity:0; }
 select.bg-black { background:url(/widesign/img/arrow_white.png) #333 no-repeat right 5px center !important; background-size:6px !important; }
 select.bg-black option { color:white !important; }

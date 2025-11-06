@@ -1,4 +1,5 @@
-@charset "utf-8"; /* admin style */
+@charset "utf-8"; 
+/* admin style */
 /* @latest 2023.07.12 JRA */
 /* @latest 2023.07.31 JRA */
 /* @latest 2023.08.03 OSY */
@@ -1417,7 +1418,7 @@ div.pop-box1 > div.layer1 div.pop-conts h4, div.pop-box2 > div.layer1 div.pop-co
  .qesitm-box .input-control { width:30% !important; } 
  }
 
-.datePicker { width:auto !important; min-width:30%; padding-left:33px !important; background:url(/images/wzwg/site/mngr/datepicker.png) 7px 10px no-repeat; } 
+.datePicker { width:auto !important; min-width:30%; padding-left:33px !important; background:url(http://osanedu.wiz-wig.co.kr/images/wzwg/site/mngr/datepicker.png) 7px 10px no-repeat; } 
 @media (max-width:599px){
  .datePicker { width:60% !important; } 
  }

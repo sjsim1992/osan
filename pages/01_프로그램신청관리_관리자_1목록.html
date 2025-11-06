@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/osan.css">
+    <link rel="stylesheet" href="../assets/css/admin_style.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+    <body class="" style="background:#fff;">
+
+    <div id="wrap">
+        <div id="container" style="min-height: 867px;">
+
+            <div id="header">
+                <div class="header-menu">
+                    <ul></ul>
+                </div>
+            </div>
+            <div class="mngr_top_menu">
+                <ul></ul>
+            </div>
+            <div id="sidebar"></div>
+
+
+
+            <div id="contents">
+                <div id="main">
+
+
+                    <div class="content-wrapper">
+                        <div class="location-001">
+                            <ul>
+                                <li><img src="http://osanedu.wiz-wig.co.kr/images/wzwg/site/mngr/lo-home.png" alt="홈"></li>
+                                <li>프로그램 신청 관리</li>
+                                <li>고등학생 장학금</li>
+                            </ul>
+                        </div>
+                        <h2>고등학생 장학금</h2>
+
+
+
+
+                        <!-- 
+                        내용부분
+                        -->
+
+                        
+                            <div class="wzAdmSrchbox txt-l">
+                                <ul class="wzForm wd100">
+                                    <li class="i-block mr20">
+                                        <label>
+                                            <input id="selectYearType01" name="selectYearType" type="radio">
+                                            <span class="spanLabel">접수년도 :</span>
+                                            <select>
+                                                <option>2025년</option>
+                                            </select>
+                                        </label>
+                                    </li>
+                                    <li class="i-block">
+                                        <label>
+                                            <input id="selectYearType02" name="selectYearType" type="radio">
+                                            <span class="spanLabel">접수년월 :</span>
+                                        </label>
+                                        <input type="text" id="searchStartDt" name="searchStartDt" class="datePicker cal hasDatepicker" title="검색시작일" placeholder="검색시작일을(를) 선택하세요" readonly="readonly" dir="required,vdate" value="">
+                                        ~
+                                        <input type="text" id="searchStartDt" name="searchStartDt" class="datePicker cal hasDatepicker" title="검색시작일" placeholder="검색종료일을(를) 선택하세요" readonly="readonly" dir="required,vdate" value="">
+                                    </li>
+                                </ul>
+
+                                <ul class="wzForm mt10 i-block mr30">
+                                    <li class="i-block mr20">
+                                        <label>
+                                            <input id="selectState01" name="selectState" type="radio">
+                                            <span class="spanLabel">전체</span>
+                                        </label>
+                                    </li>
+                                    <li class="i-block mr20">
+                                        <label>
+                                            <input id="selectState02" name="selectState" type="radio">
+                                            <span class="spanLabel">준비중</span>
+                                        </label>
+                                    </li>
+                                    <li class="i-block">
+                                        <label>
+                                            <input id="selectState03" name="selectState" type="radio">
+                                            <span class="spanLabel">접수중</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                                <select>
+                                    <option>제목</option>
+                                </select>
+                                <input type="text" placeholder="검색어를 입력하세요">
+                                <a href="javascript:void(0);" class="mb10 mt10 wzbtn btn-srch" onclick="fnSearch(1);">검색</a>
+                            </div>
+
+
+                            <div class="wd100 fl rt-box mt10">
+                                <span class="fs15 fl linehgt40">총 7건</span>
+                                <select name="pageUnit">
+                                    <option value="10" selected=""> 10개 </option>
+                                    <option value="20"> 20개 </option>
+                                    <option value="50"> 50개 </option>
+                                    <option value="100"> 100개 </option>
+                                </select>
+                            </div>
+
+                            <table class="basic-table">
+                                <colgroup>
+                                    <col width="3%">
+                                    <col width="*">
+                                    <col width="15%">
+                                    <col width="5%">
+                                    <col width="5%">
+                                    <col width="5%">
+                                    <col width="5%">
+                                    <col width="5%">
+                                    <col width="10%">
+                                    <col width="12%">
+                                    <col width="8%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">No</th>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">접수기간</th>
+                                        <th scope="col">신청완료</th>
+                                        <th scope="col">선발</th>
+                                        <th scope="col">탈락</th>
+                                        <th scope="col">대기</th>
+                                        <th scope="col">신청취소</th>
+                                        <th scope="col">상태</th>
+                                        <th scope="col">등록일</th>
+                                        <th scope="col">관리</th>
+                                    </tr>
+                                </thead>
+                            
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="txt-l">2025년 하반기 고등학생 장학금</td>
+                                        <td>2025.09.15 00:00<br>~2025.09.19 23:59</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>
+                                            <span class="circle_badge bg-orange-strong br3 vert-m">준비중</span>
+                                        </td>
+                                        <td>2025.09.30</td>
+                                        <td>
+                                            <a href="javascript:void(0);" onclick="#" class="iconOnlyBtn btn-basic btn-setting" title="설정">설정</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="txt-l">2025년 하반기 고등학생 장학금</td>
+                                        <td>2025.09.15 00:00<br>~2025.09.19 23:59</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>
+                                            <span class="circle_badge bg-blue-strong br3 vert-m">접수중</span>
+                                        </td>
+                                        <td>2025.09.30</td>
+                                        <td>
+                                            <a href="javascript:void(0);" onclick="#" class="iconOnlyBtn btn-basic btn-setting" title="설정">설정</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="txt-l">2025년 하반기 고등학생 장학금</td>
+                                        <td>2025.09.15 00:00<br>~2025.09.19 23:59</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>
+                                            <span class="circle_badge bg-grey-strong br3 vert-m">마감</span>
+                                        </td>
+                                        <td>2025.09.30</td>
+                                        <td>
+                                            <a href="javascript:void(0);" onclick="#" class="iconOnlyBtn btn-basic btn-setting" title="설정">설정</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="ctr-box" id="pageInfo">
+                                <ul class="num mobile-none">
+                                    <li class="on"><a href="#" onclick="return false; " class="on" title="현재페이지">1</a></li>
+                                    <li class="num"><a href="javascript:void(0);" onclick="fnPage(2);return false; " title="2 page">2</a></li>
+                                    <li class="num"><a href="javascript:void(0);" onclick="fnPage(3);return false; " title="3 page">3</a></li>
+                                    <li class="num"><a href="javascript:void(0);" onclick="fnPage(4);return false; " title="4 page">4</a></li>
+                                    <li class="num"><a href="javascript:void(0);" onclick="fnPage(5);return false; " title="5 page">5</a></li>
+                            
+                                </ul>
+                            
+                                <ul class="num pc-none">
+                                    <li class="on"><a href="#" onclick="return false; " class="on" title="현재페이지">1</a></li>
+                                    <li class="num"><a href="javascript:void(0);" onclick="fnPage(2);return false; " title="2 page">2</a></li>
+                                    <li class="num"><a href="javascript:void(0);" onclick="fnPage(3);return false; " title="3 page">3</a></li>
+                                    <li class="num"><a href="javascript:void(0);" onclick="fnPage(4);return false; " title="4 page">4</a></li>
+                                    <li class="num"><a href="javascript:void(0);" onclick="fnPage(5);return false; " title="5 page">5</a></li>
+                            
+                                </ul>
+                            </div>
+                            
+                            <div class="rt-box">
+                                <a class="wzbtn btn-green ico-excel" id="regist_btn" onclick="fnExcelDown();" href="javascript:void(0);">엑셀 다운로드</a>
+                                <a href="#" class="wzbtn btn-save">프로그램 등록</a>
+                            </div>
+
+
+
+
+
+                        <!-- /내용 끝 -->
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div id="footer">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    </body>
+</html>
