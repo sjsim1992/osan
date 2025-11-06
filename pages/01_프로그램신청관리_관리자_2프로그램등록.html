@@ -60,11 +60,11 @@
                                     <tr>
                                         <th>구분</th>
                                         <td>
-                                            <p>고등학생 장학금</p>
+                                            <p class="linehgt40">고등학생 장학금</p>
                                         </td>
                                         <th>등록일</th>
                                         <td>
-                                            <p>2025-09-30</p>
+                                            <p class="linehgt40">2025-09-30</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -86,15 +86,246 @@
                                             </span>
                                         </th>
                                         <td colspan="3">
-                                            
+                                                <input type="text" class="datePicker cal hasDatepicker" style="width:100px;" readonly="readonly" name="startDt" dir="required,vdateFt=startDt:endDt" title="시작일" placeholder="시작일을(를) 선택해주세요" id="dp1762407038932">
+                                                <select name="startTime" dir="required,vnum" title="시작시간 구분">
+                                                    <option value="00">00 시</option>
+                                                </select>
+                                                <select name="startTime" dir="required,vnum" title="시작시간 구분">
+                                                    <option value="00">00 분</option>
+                                                </select>
+                                                ~
+                                                <input type="text" class="datePicker cal hasDatepicker" style="width:100px;" readonly="readonly" name="endDt" dir="required,vdate" title="종료일" placeholder="종료일을(를) 선택해주세요" id="dp1762407038933">
+                                                <select name="endTime" dir="required,vnum" title="종료시간 구분">
+                                                    <option value="00">00 시</option>
+                                                </select>
+                                                <select name="startTime" dir="required,vnum" title="시작시간 구분">
+                                                    <option value="00">00 분</option>
+                                                </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>전형</th>
+                                        <td colspan="3">
+                                            <ul class="wzForm">
+                                                <li>
+                                                    <label><input id="usrtype1" name="usrtype" type="radio" value="Y"  checked="checked"><span class="spanLabel">우수인재</span></label>
+                                                </li>
+                                                <li>
+                                                    <label><input id="usrtype2" name="usrtype" type="radio"><span class="spanLabel">희망인재</span></label>
+                                                </li>
+                                                <li>
+                                                    <label><input id="usrtype3" name="usrtype" type="radio"><span class="spanLabel">근로자자녀</span></label>
+                                                </li>
+                                                <li>
+                                                    <label><input id="usrtype4" name="usrtype" type="radio"><span class="spanLabel">다자녀가정자녀</span></label>
+                                                </li>
+                                                <li>
+                                                    <label><input id="usrtype5" name="usrtype" type="radio"><span class="spanLabel">다문화가정자녀</span></label>
+                                                </li>
+                                            </ul>
                                         </td>
                                     </tr>
 
                                 </tbody>
                             </table>
 
+
+                            <table class="basic">
+                                <colgroup>
+                                    <col width="15%">
+                                    <col width="*">
+                                </colgroup>
+                                <tbody>
+                                    <tr class="wideth-white">
+                                        <th colspan="2" class="wzAdmSTit">전형별 제출서류</th>
+                                    </tr>
+
+                                    <tr class="selectType01">
+                                        <th>우수인재 전형</th>
+                                        <td>
+                                            <ul class="wzForm">
+                                                <li>
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">성적증빙자료</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    
+
+                                    <tr class="selectType02" style="display:none;">
+                                        <th>희망인재 전형</th>
+                                        <td>
+                                            <ul class="wzForm">
+                                                <li>
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">보험료납입확인서</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="selectType03" style="display:none;">
+                                        <th>근로자자녀 전형</th>
+                                        <td>
+                                            <ul class="wzForm">
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">기업체 재직증명서</span>
+                                                    </label>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">가족관계증명서</span>
+                                                    </label>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">한국노총오산시지부 장학생추천서</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="selectType04" style="display:none;">
+                                        <th>다자녀가정자녀 전형</th>
+                                        <td>
+                                            <ul class="wzForm">
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">지방세 세목별 과세증명서</span>
+                                                    </label>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">보험료납입확인서</span>
+                                                    </label>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">가족관계증명서</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="selectType05" style="display:none;">
+                                        <th>다문화가정자녀 전형</th>
+                                        <td>
+                                            <ul class="wzForm">
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">가족관계증명서</span>
+                                                    </label>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">기본증명서</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr class="selectType0_all">
+                                        <th>공통</th>
+                                        <td>
+                                            <ul class="wzForm">
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">추천서</span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <a href="#" class="wzbtn-table  btn-grey-bg">양식 받기</a>
+                                                        <a href="#" class="wzbtn-table btn-grey">양식 업로드</a>
+                                                    </div>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">주민등록초본</span>
+                                                    </label>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">주민등록등본</span>
+                                                    </label>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">국민기초생활보장수급자</span>
+                                                    </label>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">차상위계층확인서</span>
+                                                    </label>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">한부모가족보호대상확인서</span>
+                                                    </label>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">장애인증명서</span>
+                                                    </label>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">첨부파일</span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <a href="#" class="wzbtn-table  btn-grey-bg">양식 받기</a>
+                                                        <a href="#" class="wzbtn-table btn-grey">양식 업로드</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+
+<script>
+$('input[name="usrtype"]').on('change', function () {
+  const id = $(this).attr('id');       // usrtype1 ~ usrtype4
+  const num = id.replace('usrtype', ''); // 1~4 추출
+
+  // 모든 tr 숨기기
+  $('[class^="selectType"]').hide();
+
+  // 선택된 것만 보여주기
+  $(`.selectType0${num}`).show();
+});
+</script>
+
+
                             
                             <div class="rt-box">
+                                <a href="#" class="wzbtn btn-del fl">삭제</a>
                                 <a href="#" class="wzbtn btn-save">저장</a>
                                 <a href="#" class="wzbtn btn-basic">목록</a>
                             </div>

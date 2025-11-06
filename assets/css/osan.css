@@ -1,3 +1,38 @@
 @charset "utf-8"; 
 @import url("common.css"); 
 @import url("widesigncore.css"); 
+
+
+
+
+.wzpopup .wzAdmSTit {}
+.wzpopup .wzAdmSTit:before {content:"";}
+.wzpopup table.basic.basic-narrow > tbody > tr > th {width:150px; padding:5px 25px 5px 15px; text-align:right; font-size:15px; line-height:40px; font-weight:500; word-break:keep-all; vertical-align:top; background:#f9f9f9; color:#6f6f6f; border-top:1px solid #ddd;}
+.wzpopup table.basic.basic-narrow > tbody > tr > th .necessary span:before {}
+.wzpopup table.basic.basic-narrow > tbody > tr > td {padding:10px 15px; font-size:15px; line-height:150%; text-align:left; word-break:keep-all; border-top:1px solid #ddd;}
+.wzpopup table.basic tr.selectAll td .wzForm>li,
+.wzpopup table.basic tr[class *="selectType0"] td .wzForm>li {margin-right:0;width: 100%;}
+.wzpopup table.basic tr.selectAll td .wzForm>li ~ li,
+.wzpopup table.basic tr[class *="selectType0"] td .wzForm>li ~ li {margin-top:5px;}
+.wzpopup table.basic tr.selectAll td .wzForm>li label,
+.wzpopup table.basic tr[class *="selectType0"] td .wzForm>li label {width: 240px;display: inline-block;vertical-align: top;}
+.wzpopup table.basic tr.selectAll td .wzForm>li label .necessary, 
+.wzpopup table.basic tr[class *="selectType0"] td .wzForm>li label .necessary {top: 11px;}
+.wzpopup table.basic tr.selectAll td .wzForm>li label ~ div input[type="text"],
+.wzpopup table.basic tr[class *="selectType0"] td .wzForm>li label ~ div input[type="text"] {color:#838383;font-size: 14px;}
+.wzpopup table.basic tr.selectAll td .wzForm>li .wzbtn-table,
+.wzpopup table.basic tr[class *="selectType0"] td .wzForm>li .wzbtn-table {padding: 0 10px !important; font-size: 14px; line-height: 38px;}
+
+
+/* 파일 업로드 및 업로드목록 */
+.flieupListBox {width:100%; background:#f9f9f9; border:1px dashed #ddd; padding:10px; box-sizing:border-box; border-radius:10px; display:flex; gap:10px; clear:both; margin-top:10px;}
+.flieupListBox:empty {padding:0; border:none;}
+.flieupListBox li {padding:0 10px;border:1px solid #ddd;border-radius:10px;background:#fff;margin-right: 0 !important;line-height:40px;overflow:hidden;}
+.flieupListBox li .upNm {font-size:14px; line-height:40px; margin-right:3px;}
+.flieupListBox li button.btn-del {text-indent:-999px; width:18px; height:18px; border:1px solid #c20000; border-radius:100%; position:relative; box-sizing:border-box; margin-top:-2px;}
+.flieupListBox li button.btn-del:before {content:"X"; /* color:#c20000; */text-indent:0px; position:absolute; left:0; top:0; width:100%; height:100%; font-size:10px; text-align:center; font-weight:600;}
+    @media (max-width:899px){
+        .flieupListBox {flex-direction:column; gap:5px;}
+        .flieupListBox li {line-height:35px;}
+        .flieupListBox li .upNm {line-height:35px;}
+    }
