@@ -253,7 +253,7 @@
 
 
 /***** 공통 *****/
-.osan_usrWrap:not(:has(.wzAdmSTit)) { font-size: var(--subCoSize); }
+.osan_usrWrap:not(:has([class *= "wzAdm"])) { font-size: var(--subCoSize); }
 .osan_usrWrap section + section { margin-top: 50px; }
 .osan_usrWrap :is(.bullet_tit) { position: relative; display: block; padding-left: 24px; margin-top: 20px; margin-bottom: 10px; font-size: 2em; font-weight: 600; color: #333; }
 .osan_usrWrap :is(.bullet_tit):before {  position: absolute; left: 0; top: 7px; content: ""; width: 16px; height: 19px; display: inline-block; background: url(/module/upload/image/selectImageDetail.do?usrimgId=3789); }
