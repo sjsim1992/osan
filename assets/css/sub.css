@@ -255,10 +255,14 @@
 /***** 공통 *****/
 .osan_usrWrap:not(:has([class *= "wzAdm"])) { font-size: var(--subCoSize); }
 .osan_usrWrap section + section { margin-top: 50px; }
-.osan_usrWrap :is(.bullet_tit) { position: relative; display: block; padding-left: 24px; margin-top: 20px; margin-bottom: 10px; font-size: 2em; font-weight: 600; color: #333; }
-.osan_usrWrap :is(.bullet_tit):before {  position: absolute; left: 0; top: 7px; content: ""; width: 16px; height: 19px; display: inline-block; background: url(/module/upload/image/selectImageDetail.do?usrimgId=3789); }
-.osan_usrWrap .rt-box [class *= "wzbtn"] { font-size: 1.6em; }
-.osan_usrWrap .chkBox { font-size: 1.6em; }
+#dclrArea .bullet_tit,
+.osan_usrWrap .bullet_tit { position: relative; display: block; padding-left: 24px; margin-top: 20px; margin-bottom: 10px; font-weight: 600; color: #333; }
+#dclrArea .bullet_tit:before,
+.osan_usrWrap .bullet_tit:before {  position: absolute; left: 0; top: 7px; content: ""; width: 16px; height: 19px; display: inline-block; background: url(/module/upload/image/selectImageDetail.do?usrimgId=3789); }
+#dclrArea .bullet_tit { font-size: 20px; }
+.osan_usrWrap .bullet_tit { font-size: 2em; }
+.osan_usrWrap .rt-box [class *= "wzbtn"] { font-size: 1.5em; }
+.osan_usrWrap .chkBox { font-size: 1.5em; }
 
 table.basic.basic-narrow > tbody > tr > th {width:150px; padding:5px 25px 5px 15px; text-align:right; font-size:15px; line-height:40px; font-weight:500; word-break:keep-all; vertical-align:top; background:#f9f9f9; color:#6f6f6f; border-top:1px solid #ddd; position:relative;}
 table.basic.basic-narrow > tbody > tr > th .necessary span:before {}
