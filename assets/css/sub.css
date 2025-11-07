@@ -1,5 +1,5 @@
 @charset "utf-8"; 
-/* last - 2025.11.06 OSY */
+/* last - 2025.11.07 OSY */
 
 :root {
   --subCoSize:10px;
@@ -253,7 +253,7 @@
 
 
 /***** 공통 *****/
-.osan_usrWrap { font-size: var(--subCoSize); }
+.osan_usrWrap:not(:has(.wzAdmSTit)) { font-size: var(--subCoSize); }
 .osan_usrWrap section + section { margin-top: 50px; }
 .osan_usrWrap :is(.bullet_tit) { position: relative; display: block; padding-left: 24px; margin-top: 20px; margin-bottom: 10px; font-size: 2em; font-weight: 600; color: #333; }
 .osan_usrWrap :is(.bullet_tit):before {  position: absolute; left: 0; top: 7px; content: ""; width: 16px; height: 19px; display: inline-block; background: url(/module/upload/image/selectImageDetail.do?usrimgId=3789); }
@@ -290,8 +290,7 @@
 }
 
 /* 클린신고센터 - 신고하기 */
-.osan_usrWrap .agree_info { height: 200px; padding: 20px 25px; font-size: 1.45em; border: 1px solid #e7e7e7; overflow-y: auto; }
-.osan_usrWrap .agree_info .tbwrap { line-height: 1.5; }
-#dclrFrm .areWrap { display: flex; flex-direction: column;  }
-#dclrFrm .areWrap .wzForm { display: inline-flex; width: auto; margin-left: auto; }
-#dclrFrm .areWrap .wzForm + [class *= "fs18"][class *= "txt-l"] { margin-top: 50px; }
+.osan_usrWrap .agree-sec .agree_info { height: 200px; padding: 20px 25px; font-size: 1.45em; border: 1px solid #e7e7e7; overflow-y: auto; }
+.osan_usrWrap .agree-sec .agree_info .tbwrap { line-height: 1.5; }
+.osan_usrWrap .agree-sec .chkBox { display: inline-flex; width: auto; margin-left: auto; }
+.osan_usrWrap .report-sec .areWrap { display: flex; flex-direction: column; }
