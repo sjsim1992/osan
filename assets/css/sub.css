@@ -259,6 +259,25 @@
 .osan_usrWrap :is(.bullet_tit):before {  position: absolute; left: 0; top: 7px; content: ""; width: 16px; height: 19px; display: inline-block; background: url(/module/upload/image/selectImageDetail.do?usrimgId=3789); }
 .osan_usrWrap .rt-box [class *= "wzbtn"] { font-size: 1.6em; }
 
+table.basic.basic-narrow > tbody > tr > th {width:150px; padding:5px 25px 5px 15px; text-align:right; font-size:15px; line-height:40px; font-weight:500; word-break:keep-all; vertical-align:top; background:#f9f9f9; color:#6f6f6f; border-top:1px solid #ddd; position:relative;}
+table.basic.basic-narrow > tbody > tr > th .necessary span:before {}
+table.basic.basic-narrow > tbody > tr > td {padding:10px 15px; font-size:15px; line-height:150%; text-align:left; word-break:keep-all; border-top:1px solid #ddd;}
+
+table.basic.basic-narrow .necessary { position: absolute; top: 30px; line-height: normal; } 
+table.basic.basic-narrow .necessary:hover { cursor:pointer; } 
+table.basic.basic-narrow .necessary span { } 
+table.basic.basic-narrow .necessary span:before { content:"\f0a3"; font-family:FontAwesome; color: #df2127; font-size: 4px; margin-left: 4px; margin-top: -8px; position: absolute; } 
+table.basic.basic-narrow .necessary div { font-size: 12px; font-weight: 400; line-height: 120%; padding: 5px 7px; background: #df2127; color: #fff; border-radius: 5px; position: absolute; left: 12px; z-index: 1; clip: rect(0,0,0,0); transition: left 0.5s; } 
+table.basic.basic-narrow .necessary div:before { content:""; width: 6px; height: 6px; box-sizing:border-box; border-right: 6px solid #df2127; border-top: 3px solid transparent; border-bottom: 4px solid transparent; position: absolute; left: -5px; top: 9px; } 
+table.basic.basic-narrow .necessary:hover div { display: inline-block; clip:auto; top: -15px; left: 21px; } 
+
+table.basic.basic-narrow tr[class *="select"] td .wzForm>li {margin-right:0;width: 100%;}
+table.basic.basic-narrow tr[class *="select"] td .wzForm>li ~ li {margin-top:5px;}
+table.basic.basic-narrow tr[class *="select"] td .wzForm>li label {width: 240px;display: inline-block;vertical-align: top;}
+table.basic.basic-narrow tr[class *="select"] td .wzForm>li label .necessary {top: 11px;}
+table.basic.basic-narrow tr[class *="select"] td .wzForm>li label ~ div input[type="text"] {color:#838383;font-size: 14px;}
+table.basic.basic-narrow tr[class *="select"] td .wzForm>li .wzbtn-table {padding: 0 10px !important; font-size: 14px; line-height: 38px;}
+
 
 
 /***** 클린신고센터 *****/
@@ -290,7 +309,8 @@
 }
 
 /* 클린신고센터 - 신고하기 */
+.osan_usrWrap .agree-sec { display: flex; flex-direction: column; }
 .osan_usrWrap .agree-sec .agree_info { height: 200px; padding: 20px 25px; font-size: 1.45em; border: 1px solid #e7e7e7; overflow-y: auto; }
 .osan_usrWrap .agree-sec .agree_info .tbwrap { line-height: 1.5; }
-.osan_usrWrap .agree-sec .chkBox { display: inline-flex; width: auto; margin-left: auto; }
+.osan_usrWrap .agree-sec .chkBox { display: inline-flex; width: auto; margin: 10px 0 0 auto; }
 .osan_usrWrap .report-sec .areWrap { display: flex; flex-direction: column; }
