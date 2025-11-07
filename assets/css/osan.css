@@ -126,3 +126,21 @@ table.basic.basic-narrow tr[class *="select"] td .wzForm>li .wzbtn-table {paddin
 
 
 
+
+
+/* 
+자동문자관리 
+*/
+.messageAdminWrap {}
+.messageAdminWrap>ul {display:flex; flex-wrap:wrap; gap:20px;}
+.messageAdminWrap>ul>li {display:flex;flex-direction:column;border: 1px solid #ddd;border-radius: 10px;overflow: hidden;width: 23%;min-width: 330px;}
+.messageAdminWrap .msgTit {font-size:16px;background: #F1F8FE;padding:10px 15px;box-sizing:border-box;font-family: 'Noto Sans KR';font-weight: 500;color: #6f6f6f;border-bottom: 1px solid #ddd;}
+.messageAdminWrap .msgCo  {height: 200px; }
+.messageAdminWrap .msgCo textarea {padding:15px;width:100%;box-sizing:border-box;font-size:15px;line-height:150%;resize: none;outline: none;height: 100%;border: none;}
+
+.messageAdminWrap * ::-webkit-scrollbar {width:10px;}
+.messageAdminWrap * ::-webkit-scrollbar-track {background:transparent;}
+.messageAdminWrap * ::-webkit-scrollbar-thumb {background:rgba(0,0,0,0.2);}
+.messageAdminWrap * ::-webkit-scrollbar-thumb:hover {background:#555;} 
+
+
