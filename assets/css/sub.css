@@ -255,11 +255,11 @@
 /***** 공통 *****/
 .osan_usrWrap:not(:has([class *= "wzAdm"])) { font-size: var(--subCoSize); }
 .osan_usrWrap section + section { margin-top: 50px; }
-#dclrArea .bullet_tit,
+#dclrArea .bullet_tit:not(.tit_left),
 .osan_usrWrap .bullet_tit { position: relative; display: block; padding-left: 24px; margin-top: 20px; margin-bottom: 10px; font-weight: 600; color: #333; }
-#dclrArea .bullet_tit:before,
+#dclrArea .bullet_tit:not(.tit_left):before,
 .osan_usrWrap .bullet_tit:before {  position: absolute; left: 0; top: 7px; content: ""; width: 16px; height: 19px; display: inline-block; background: url(/module/upload/image/selectImageDetail.do?usrimgId=3789); }
-#dclrArea .bullet_tit { font-size: 20px; }
+#dclrArea .bullet_tit:not(.tit_left) { font-size: 20px; }
 .osan_usrWrap .bullet_tit { font-size: 2em; }
 .osan_usrWrap .rt-box [class *= "wzbtn"] { font-size: 1.5em; }
 .osan_usrWrap .chkBox { font-size: 1.5em; }
