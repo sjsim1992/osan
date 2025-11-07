@@ -2,26 +2,38 @@
 @import url("common.css"); 
 @import url("widesigncore.css"); 
 
+:root {
+  --subCoSize:10px;
+
+  @media (max-width:699px){
+    --subCoSize:9px;
+  }
+}
 
 
+/* 
+관리자단 
+*/
+/* 장학금 신청프로그램 신청팝업 */
+table.basic.basic-narrow > tbody > tr > th {width:150px; padding:5px 25px 5px 15px; text-align:right; font-size:15px; line-height:40px; font-weight:500; word-break:keep-all; vertical-align:top; background:#f9f9f9; color:#6f6f6f; border-top:1px solid #ddd; position:relative;}
+table.basic.basic-narrow > tbody > tr > th .necessary span:before {}
+table.basic.basic-narrow > tbody > tr > td {padding:10px 15px; font-size:15px; line-height:150%; text-align:left; word-break:keep-all; border-top:1px solid #ddd;}
 
-.wzpopup .wzAdmSTit {}
-.wzpopup .wzAdmSTit:before {content:"";}
-.wzpopup table.basic.basic-narrow > tbody > tr > th {width:150px; padding:5px 25px 5px 15px; text-align:right; font-size:15px; line-height:40px; font-weight:500; word-break:keep-all; vertical-align:top; background:#f9f9f9; color:#6f6f6f; border-top:1px solid #ddd;}
-.wzpopup table.basic.basic-narrow > tbody > tr > th .necessary span:before {}
-.wzpopup table.basic.basic-narrow > tbody > tr > td {padding:10px 15px; font-size:15px; line-height:150%; text-align:left; word-break:keep-all; border-top:1px solid #ddd;}
-.wzpopup table.basic tr.selectAll td .wzForm>li,
-.wzpopup table.basic tr[class *="selectType0"] td .wzForm>li {margin-right:0;width: 100%;}
-.wzpopup table.basic tr.selectAll td .wzForm>li ~ li,
-.wzpopup table.basic tr[class *="selectType0"] td .wzForm>li ~ li {margin-top:5px;}
-.wzpopup table.basic tr.selectAll td .wzForm>li label,
-.wzpopup table.basic tr[class *="selectType0"] td .wzForm>li label {width: 240px;display: inline-block;vertical-align: top;}
-.wzpopup table.basic tr.selectAll td .wzForm>li label .necessary, 
-.wzpopup table.basic tr[class *="selectType0"] td .wzForm>li label .necessary {top: 11px;}
-.wzpopup table.basic tr.selectAll td .wzForm>li label ~ div input[type="text"],
-.wzpopup table.basic tr[class *="selectType0"] td .wzForm>li label ~ div input[type="text"] {color:#838383;font-size: 14px;}
-.wzpopup table.basic tr.selectAll td .wzForm>li .wzbtn-table,
-.wzpopup table.basic tr[class *="selectType0"] td .wzForm>li .wzbtn-table {padding: 0 10px !important; font-size: 14px; line-height: 38px;}
+table.basic.basic-narrow .necessary { position: absolute; top: 30px; line-height: normal; } 
+table.basic.basic-narrow .necessary:hover { cursor:pointer; } 
+table.basic.basic-narrow .necessary span { } 
+table.basic.basic-narrow .necessary span:before { content:"\f0a3"; font-family:FontAwesome; color: #df2127; font-size: 4px; margin-left: 4px; margin-top: -8px; position: absolute; } 
+table.basic.basic-narrow .necessary div { font-size: 12px; font-weight: 400; line-height: 120%; padding: 5px 7px; background: #df2127; color: #fff; border-radius: 5px; position: absolute; left: 12px; z-index: 1; clip: rect(0,0,0,0); transition: left 0.5s; } 
+table.basic.basic-narrow .necessary div:before { content:""; width: 6px; height: 6px; box-sizing:border-box; border-right: 6px solid #df2127; border-top: 3px solid transparent; border-bottom: 4px solid transparent; position: absolute; left: -5px; top: 9px; } 
+table.basic.basic-narrow .necessary:hover div { display: inline-block; clip:auto; top: -15px; left: 21px; } 
+
+table.basic.basic-narrow tr[class *="select"] td .wzForm>li {margin-right:0;width: 100%;}
+table.basic.basic-narrow tr[class *="select"] td .wzForm>li ~ li {margin-top:5px;}
+table.basic.basic-narrow tr[class *="select"] td .wzForm>li label {width: 240px;display: inline-block;vertical-align: top;}
+table.basic.basic-narrow tr[class *="select"] td .wzForm>li label .necessary {top: 11px;}
+table.basic.basic-narrow tr[class *="select"] td .wzForm>li label ~ div input[type="text"] {color:#838383;font-size: 14px;}
+table.basic.basic-narrow tr[class *="select"] td .wzForm>li .wzbtn-table {padding: 0 10px !important; font-size: 14px; line-height: 38px;}
+
 
 
 /* 파일 업로드 및 업로드목록 */
@@ -41,6 +53,52 @@
 
 
     
+/* 
+사용자단
+*/
+/* 장학금 신청프로그램 목록 */
+/* ++ 관리자단 구조의 가장 바깥에 osan_usrWrap 클래스로 감싸져있는 상태 */
+.osan_usrWrap {font-size: var(--subCoSize);}
+.osan_usrWrap .wzAdmSrchbox {background: #f8f9fa; padding: 25px 35px; text-align: center !important;}
+.osan_usrWrap .wzAdmSrchbox ul {}
+.osan_usrWrap .wzAdmSrchbox .wzForm label>input[type="radio"] + .spanLabel {font-size: 17px; font-family: 'esamanru'; font-weight: 300;}
+.osan_usrWrap .wzAdmSrchbox select {background-color:#fff;border-radius: 10px;}
+.osan_usrWrap .wzAdmSrchbox input[type="text"] {border-radius: 10px;}
+.osan_usrWrap .wzAdmSrchbox .btn-srch {border-radius: 10px;line-height: 38px;}
+
+.osan_usrWrap .basic-table {border-collapse: separate;border-spacing: 0 10px;border-bottom: none;}
+.osan_usrWrap .basic-table thead tr {background:transparent;}
+.osan_usrWrap .basic-table thead tr th {color: #6f6f6f; font-size: 15px; padding: 0 5px 10px; background: transparent; border-top: none; border-bottom: 2px solid #e7e7e7;}
+.osan_usrWrap .basic-table tbody tr {border-radius: 20px;overflow: hidden;}
+.osan_usrWrap .basic-table tbody tr td {background: #f8f9fa; border: 1px solid #f8f9fa; color: #555; font-size: 15px; padding: 20px 5px;}
+.osan_usrWrap .basic-table tbody tr td.txt-l {font-weight: 500;font-size: 16px;}
+.osan_usrWrap .basic-table tbody tr td .btn-edit {}
+.osan_usrWrap .basic-table tbody tr td:first-child {border-radius: 20px 0 0 20px;}
+.osan_usrWrap .basic-table tbody tr td:last-child  {border-radius: 0 20px 20px 0;}
 
 
-.osanSrchbox {}
+
+/* 장학금 신청프로그램 사용자단 신청하기 페이지 */
+.osan_usrWrap .wzAdmSTit {font-size: 2em;font-weight: 600;padding-bottom: 10px;vertical-align: top;color: #333;word-break: keep-all;padding-left: 24px;position: relative;}
+.osan_usrWrap .wzAdmSTit:before {content:"";content: "";width: 16px;height: 19px;display: inline-block;background: url(../images/bull.png);position: absolute;left: 0;top: 7px;}
+
+.osan_usrWrap .basic.basic-narrow [class *="select"] .wzForm label {line-height: 40px;}
+.osan_usrWrap .basic.basic-narrow [class *="select"] .wzForm label .spanLabel {}
+.osan_usrWrap .basic.basic-narrow [class *="select"] .wzForm label .spanLabel:before {display: none;}
+.osan_usrWrap .basic.basic-narrow [class *="select"] .wzForm label .spanLabel:hover  {cursor:auto;}
+
+.osan_usrWrap .wzbtn {font-size:16px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
