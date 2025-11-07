@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/osan.css">
+    <link rel="stylesheet" href="../assets/css/sub.css">
+    <link rel="stylesheet" href="../assets/css/usr_style.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+    <body>
+
+<div class="inner">
+
+    <div id="sub_visual" class="mainBanner topSubImgOrign">
+        <img src="http://www.wiz-builder.com/sample/template/basic/basic_osan/img/mv_03.jpg" alt="">
+        <div class="bluebg">
+            <div class="sub_titbox bTextAlign">
+                <p class="bTitle"> </p>
+                <strong class="bContent"> </strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub_div_wrap" style="clear:both;">
+        <div class="subCon" id="mainContent">
+            <ul class="location tendina" id="menuLocationPath">
+                <li class="home"><a href="/osan/" data-lv="1">HOME</a></li>
+                <li><a href="/osan/subList/20000001613" data-lv="1">마이페이지</a></li>
+                <li class="tendina selected"><a href="/osan/subList/20000001611" data-lv="1">나의 신청</a></li>
+            </ul>
+
+            <h4 class="tit" id="menuTitle">나의 신청</h4>
+            <p id="menuInfo"> </p>
+            <div>
+
+
+
+
+                <!-- 
+                내용부분
+                -->
+
+                <div class="osan_usrWrap"> 
+
+                    <div class="topTab">
+                        <a href="#">고등학생 장학금</a>
+                        <a href="#">대학생 장학금</a>
+                        <a href="#">특기생 장학금</a>
+                        <a href="#">행복기숙사 입사비</a>
+                        <a href="#" class="on">평생교육장려금</a>
+                    </div>
+
+
+
+
+
+
+
+                        <h2 class="upTit pb20">
+                            평생교육장려금 수강등록신고
+                        </h2>
+                        
+                        <h3 class="wzAdmSTit fl wd100">제출 서류</h3>
+                        <table class="basic basic-narrow">
+                            <tbody>
+                                <tr>
+                                    <th>통장사본
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text" value="통장사본.pdf">
+                                        <a href="javascript:void(0);" class="wzbtn-table btn-basic">제출</a>
+                                        <a href="javascript:void(0);" class="wzbtn-table btn-grey">받기</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>주민등록초본
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text" value="주민등록초본.pdf">
+                                        <a href="javascript:void(0);" class="wzbtn-table btn-basic">제출</a>
+                                        <a href="javascript:void(0);" class="wzbtn-table btn-grey">받기</a>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>첨부파일</th>
+                                    <td colspan="3">
+                                        <input type="text" value="기타추가서류.zip">
+                                        <a href="javascript:void(0);" class="wzbtn-table btn-basic">추가</a>
+                                        <ul class="flieupListBox">
+                                            <li><span class="upNm">신청 관련 부가 서류.pdf</span>
+                                                <button type="button" class="btn-del">삭제</button>
+                                            </li>
+                                            <li><span class="upNm">신청관련부가서류.pdf</span>
+                                                <button type="button" class="btn-del">삭제</button>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+
+
+                        <h3 class="wzAdmSTit fl wd100">수강등록신고 1차</h3>
+                        <table class="basic basic-narrow">
+                            <tbody>
+                                <tr>
+                                    <th>교육기관
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text" class="wd70" value="교육기관">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>프로그램
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text" class="wd70" value="디지털드로잉">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>교육비
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text" value="300,000" class="mr10 txt-r pr10">원
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>교육비영수증
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text" value="교육비영수증.pdf">
+                                        <a href="javascript:void(0);" class="wzbtn-table btn-basic">제출</a>
+                                        <a href="javascript:void(0);" class="wzbtn-table btn-grey">받기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>수료증
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text" value="수료증.pdf">
+                                        <a href="javascript:void(0);" class="wzbtn-table btn-basic">제출</a>
+                                        <a href="javascript:void(0);" class="wzbtn-table btn-grey">받기</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        
+
+
+
+                        <h3 class="wzAdmSTit fl wd100">수강등록신고 2차 ~ 이하 내용 동일</h3>
+                        <table class="basic basic-narrow">
+                            <tbody>
+                                <tr>
+                                    <th>교육기관
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text" class="wd70" value="교육기관">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>프로그램
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text" class="wd70" value="디지털드로잉">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>교육비
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text" value="300,000" class="mr10 txt-r pr10">원
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>교육비영수증
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text" value="교육비영수증.pdf">
+                                        <a href="javascript:void(0);" class="wzbtn-table btn-basic">제출</a>
+                                        <a href="javascript:void(0);" class="wzbtn-table btn-grey">받기</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>수료증
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text" value="수료증.pdf">
+                                        <a href="javascript:void(0);" class="wzbtn-table btn-basic">제출</a>
+                                        <a href="javascript:void(0);" class="wzbtn-table btn-grey">받기</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        <h3 class="wzAdmSTit fl wd100">수강등록신고 3차</h3>
+
+                        <h3 class="wzAdmSTit fl wd100">수강등록신고 4차</h3>
+
+
+
+                        <div class="wd100 btnbox-r mt20">
+                            <a href="javascript:void(0);" class="wzbtn btn-save">저장</a> 
+                            <a href="javascript:void(0);" class="wzbtn btn-basic fl">목록</a> 
+                        </div>
+
+
+
+                </div>
+
+
+                <!-- /내용 끝 -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    </body>
+</html>

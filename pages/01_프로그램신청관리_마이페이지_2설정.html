@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/osan.css">
+    <link rel="stylesheet" href="../assets/css/sub.css">
+    <link rel="stylesheet" href="../assets/css/usr_style.css">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+    <body>
+
+<div class="inner">
+
+    <div id="sub_visual" class="mainBanner topSubImgOrign">
+        <img src="http://www.wiz-builder.com/sample/template/basic/basic_osan/img/mv_03.jpg" alt="">
+        <div class="bluebg">
+            <div class="sub_titbox bTextAlign">
+                <p class="bTitle"> </p>
+                <strong class="bContent"> </strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub_div_wrap" style="clear:both;">
+        <div class="subCon" id="mainContent">
+            <ul class="location tendina" id="menuLocationPath">
+                <li class="home"><a href="/osan/" data-lv="1">HOME</a></li>
+                <li><a href="/osan/subList/20000001613" data-lv="1">마이페이지</a></li>
+                <li class="tendina selected"><a href="/osan/subList/20000001611" data-lv="1">나의 신청</a></li>
+            </ul>
+
+            <h4 class="tit" id="menuTitle">나의 신청</h4>
+            <p id="menuInfo"> </p>
+            <div>
+
+
+
+
+                <!-- 
+                내용부분
+                -->
+
+                <div class="osan_usrWrap"> 
+
+                    <div class="topTab">
+                        <a href="#" class="on">고등학생 장학금</a>
+                        <a href="#">대학생 장학금</a>
+                        <a href="#">특기생 장학금</a>
+                        <a href="#">행복기숙사 입사비</a>
+                        <a href="#">평생교육장려금</a>
+                    </div>
+
+
+
+
+
+                        <h3 class="wzAdmSTit fl wd100">개인정보 수집 및 활용에 대한 안내</h3>
+                        <div class="termsBox wd100 box-border clboth p10 brsolid brwd1 br-grey fs14" style="height:200px; overflow-y:scroll;">
+                            오산교육재단 홈페이지 프로그램 신청을 위하여 아래와 같이 개인정보를 수집・이용하고자 합니다. 내용을 자세히 읽으신 후 동의 여부를 결정하여 주시기 바랍니다.<br><br>개인정보 수집・이용 내역<br>1. 항목<br>‣ 필수항목 : 성명, 아이디, 비밀번호, 휴대폰번호, 이메일주소, 관리를 위해 수집함
+
+                        </div>
+                        <div class="wzForm wd100 mb20 txt-r mt10">
+                            <input type="checkbox" id="termsCheck">
+                            <label for="termsCheck" class="fs15">개인정보 수집 및 활용에 동의합니다.</label>
+                        </div>
+
+                        
+                        <h3 class="wzAdmSTit fl wd100">신청자 정보</h3>
+                        <table class="basic basic-narrow">
+                            <tbody>
+                                <tr>
+                                    <th>이름</th>
+                                    <td>홍길동</td>
+                                    <th>보호자
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td>
+                                        <input type="text" value="홍길동">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>생년월일
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td>
+                                        <select id="year1" name="year1" title="생년">
+                                            <option value="02">2008년</option>
+                                        </select>
+                                        <select id="year1" name="year1" title="생년">
+                                            <option value="02">1월</option>
+                                        </select>
+                                        <select id="year1" name="year1" title="생년">
+                                            <option value="02">1일</option>
+                                        </select>
+                                    </td>
+                                    <th>보호자 연락처
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td>
+                                        <select id="telno1" name="telno1" title="전화번호 앞자리">
+                                            <option value="02">010</option>
+                                        </select>
+                                        <input id="telno2" name="telno2" title="전화번호 중간자리" type="text" value="" maxlength="4" class="wd25">
+                                        <input id="telno3" name="telno3" title="전화번호 끝자리" type="text" value="" maxlength="4" class="wd25">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>성별
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td>
+                                        <ul class="wzForm i-block">
+                                            <li class="i-block mr20">
+                                                <label>
+                                                    <input id="selectState01" name="selectState" type="radio">
+                                                    <span class="spanLabel">남</span>
+                                                </label>
+                                            </li>
+                                            <li class="i-block mr20">
+                                                <label>
+                                                    <input id="selectState02" name="selectState" type="radio">
+                                                    <span class="spanLabel">여</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <th>본인 연락처
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td>
+                                        <select id="telno1" name="telno1" title="전화번호 앞자리">
+                                            <option value="02">010</option>
+                                        </select>
+                                        <input id="telno2" name="telno2" title="전화번호 중간자리" type="text" value="" maxlength="4" class="wd25">
+                                        <input id="telno3" name="telno3" title="전화번호 끝자리" type="text" value="" maxlength="4" class="wd25">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>졸업 중학교
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td>
+                                        <input type="text" value="오산중학교">
+                                    </td>
+                                    <th>재학 고등학교
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td>
+                                        <input type="text" value="오산고등학교">
+                                        <select>
+                                            <option>1학년</option>
+                                        </select>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>최종 전입일자
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td colspan="3">
+                                        <ul class="wzForm i-block vert-m">
+                                            <li class="i-block mr20">
+                                                <label>
+                                                    <input id="selectState01" name="selectState" type="radio">
+                                                    <span class="spanLabel">본인</span>
+                                                </label>
+                                            </li>
+                                            <li class="i-block mr20">
+                                                <label>
+                                                    <input id="selectState02" name="selectState" type="radio">
+                                                    <span class="spanLabel">보호자</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <div class="i-block">
+                                            <select>
+                                                <option>2008년</option>
+                                            </select>
+                                            <select id="year1" name="year1" title="생년">
+                                                <option value="02">1월</option>
+                                            </select>
+                                            <select id="year1" name="year1" title="생년">
+                                                <option value="02">1일</option>
+                                            </select>
+                                        </div>
+                                        <p class="admpg-subp w100 fl mt10">
+                                            <span class="circle_no bg-green-strong vert-m">i</span><span class="wz_tableguide i-block">공고일 기준 오산시 1년 이상 거주 확인 후 신청</span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>주소
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text"><a href="javascript:void(0);" onclick="execDaumPostcode();" class="wzbtn-table btn-basic">우편번호 찾기</a>
+                                        <br>
+                                        <input id="adresBass" name="adresBass" class="w70 mt10" title="도로명 주소" dir="required" placeholder="기본 주소" readonly="readonly" type="text">
+                                        <input id="adresBass" name="adresBass" class="w70 mt10" title="도로명 주소" dir="required" placeholder="상세주소" readonly="readonly" type="text">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        
+
+
+                        <h3 class="wzAdmSTit fl wd100">
+                            신청자 계좌정보
+                        </h3>
+                        <table class="basic basic-narrow">
+                            <tbody>
+                                <tr>
+                                    <th>은행명
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td>
+                                        <select>
+                                            <option>국민은행</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>예금주</th>
+                                    <td>홍길동</td>
+                                </tr>
+                                <tr>
+                                    <th>계좌번호
+                                        <span class="necessary"><span></span><div>필수</div></span>
+                                    </th>
+                                    <td><input title="지역" class="w70" type="text" value="123-12-1234567"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+
+
+                        <h3 class="wzAdmSTit fl wd100">
+                            고등학생 장학금 신청정보
+                        </h3>
+                        <table class="basic basic-narrow">
+                            <tbody>
+                                <tr>
+                                    <th>구분</th>
+                                    <td colspan="3">고등학생 장학금</td>
+                                </tr>
+                                <tr>
+                                    <th>제목</th>
+                                    <td colspan="3">2025년 하반기 고등학생 장학금 신청</td>
+                                </tr>
+                                <tr>
+                                    <th>접수기간</th>
+                                    <td colspan="3">2025.09.20 10:00 ~ 2025.09.30 10:00</td>
+                                </tr>
+                                <tr>
+                                    <th>전형</th>
+                                    <td colspan="3">
+                                        <ul class="wzForm">
+                                            <li>
+                                                <label><input id="usrtype1" name="usrtype" type="radio" value="Y" checked="checked"><span class="spanLabel">우수인재</span></label>
+                                            </li>
+                                            <li>
+                                                <label><input id="usrtype2" name="usrtype" type="radio"><span class="spanLabel">희망인재</span></label>
+                                            </li>
+                                            <li>
+                                                <label><input id="usrtype3" name="usrtype" type="radio"><span class="spanLabel">근로자자녀</span></label>
+                                            </li>
+                                            <li>
+                                                <label><input id="usrtype4" name="usrtype" type="radio"><span class="spanLabel">다자녀가정자녀</span></label>
+                                            </li>
+                                            <li>
+                                                <label><input id="usrtype5" name="usrtype" type="radio"><span class="spanLabel">다문화가정자녀</span></label>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+
+
+                                <tr class="selectType01">
+                                        <th>우수인재 전형</th>
+                                        <td colspan="3">
+                                            <ul class="wzForm">
+                                                <li>
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">성적증빙자료
+                                                            <span class="necessary"><span></span><div>필수</div></span>
+                                                        </span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <span>성적 : </span>
+                                                        <input type="text" value="4.5" class="mr20">
+
+                                                        <span>첨부 : </span>
+                                                        <input type="text" value="성적증빙자료.pdf" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    
+
+                                    <tr class="selectType02" style="display:none;">
+                                        <th>희망인재 전형</th>
+                                        <td colspan="3">
+                                            <ul class="wzForm">
+                                                <li>
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">보험료납입확인서
+                                                            <span class="necessary"><span></span><div>필수</div></span>
+                                                        </span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <span>납부액(부/모 합산) : </span>
+                                                        <input type="text" value="130,000" class="mr20">
+
+                                                        <span>첨부 : </span>
+                                                        <input type="text" value="건강,장기요양보험료.pdf" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="selectType03" style="display:none;">
+                                        <th>근로자자녀 전형</th>
+                                        <td colspan="3">
+                                            <ul class="wzForm">
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">기업체 재직증명서
+                                                            <span class="necessary"><span></span><div>필수</div></span>
+                                                        </span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <span>재직기간 : </span>
+                                                        <input type="text" value="1년" class="mr20">
+
+                                                        <span>첨부 : </span>
+                                                        <input type="text" value="기업체재직증명서.pdf" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">가족관계증명서
+                                                            <span class="necessary"><span></span><div>필수</div></span>
+                                                        </span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <span>가족인원 : </span>
+                                                        <input type="text" value="3명" class="mr20">
+
+                                                        <span>첨부 : </span>
+                                                        <input type="text" value="가족관계증명서.pdf" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">한국노총오산시지부 장학생추천서
+                                                            <span class="necessary"><span></span><div>필수</div></span>
+                                                        </span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <input type="text" value="한국노총오산시지부장학생추천서.pdf" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="selectType04" style="display:none;">
+                                        <th>다자녀가정자녀 전형</th>
+                                        <td colspan="3">
+                                            <ul class="wzForm">
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">지방세 세목별 과세증명서
+                                                            <span class="necessary"><span></span><div>필수</div></span>
+                                                        </span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <span>재산세(부/모/학생 합산) : </span>
+                                                        <input type="text" value="200,000" class="mr20">
+
+                                                        <span>첨부 : </span>
+                                                        <input type="text" value="세목별과세증명서.pdf" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">보험료납입확인서
+                                                            <span class="necessary"><span></span><div>필수</div></span>
+                                                        </span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <span>납부액(부/모 합산) : </span>
+                                                        <input type="text" value="130,000" class="mr20">
+
+                                                        <span>첨부 : </span>
+                                                        <input type="text" value="건강,장기요양보험료.pdf" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">가족관계증명서
+                                                            <span class="necessary"><span></span><div>필수</div></span>
+                                                        </span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <span>자녀 수 : </span>
+                                                        <input type="text" value="2명" class="mr20">
+
+                                                        <span>첨부 : </span>
+                                                        <input type="text" value="가족관계증명서.pdf" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="selectType05" style="display:none;">
+                                        <th>다문화가정자녀 전형</th>
+                                        <td colspan="3">
+                                            <ul class="wzForm">
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">가족관계증명서
+                                                            <span class="necessary"><span></span><div>필수</div></span>
+                                                        </span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <input type="text" value="가족관계증명서.pdf" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">기본증명서
+                                                            <span class="necessary"><span></span><div>필수</div></span>
+                                                        </span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <input type="text" value="기본증명서.pdf" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr class="selectAll">
+                                        <th>공통</th>
+                                        <td colspan="3">
+                                            <ul class="wzForm">
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">추천서
+                                                            <span class="necessary"><span></span><div>필수</div></span>
+                                                        </span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <input type="text" value="추천서.pdf" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey-bg">양식 받기</a>
+                                                    </div>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">주민등록초본
+                                                            <span class="necessary"><span></span><div>필수</div></span>
+                                                        </span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <span>거주기간 : </span>
+                                                        <input type="text" value="1년" class="mr20">
+
+                                                        <span>첨부 : </span>
+                                                        <input type="text" value="주민등록초본.pdf" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">주민등록등본
+                                                            <span class="necessary"><span></span><div>필수</div></span>
+                                                        </span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <input type="text" value="주민등록등본.pdf" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">성적증빙자료
+                                                            <span class="necessary"><span></span><div>필수</div></span>
+                                                        </span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <input type="text" value="성적증빙자료.pdf" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">국민기초생활보장수급자</span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <input type="text" value="국민기초생활보장수급자.pdf" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">차상위계층확인서</span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <input type="text" value="차상위계층확인서.pdf" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">한부모가족보호대상확인서</span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <input type="text" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">장애인증명서</span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <input type="text" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">제출</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey">받기</a>
+                                                    </div>
+                                                </li>
+                                                <li class="wd100">
+                                                    <label>
+                                                        <input id="checkForm1" name="checkForm" type="checkbox" checked="checked">
+                                                        <span class="spanLabel">첨부파일</span>
+                                                    </label>
+                                                    <div class="ml30 i-block">
+                                                        <span>성적 : </span>
+                                                        <input type="text" value="4.5" class="mr20">
+
+                                                        <span>첨부 : </span>
+                                                        <input type="text" readonly="">
+                                                        <a href="#" class="wzbtn-table  btn-basic">추가</a>
+                                                        <a href="#" class="wzbtn-table  btn-grey-bg">양식 받기</a>
+
+                                                        <ul class="flieupListBox">
+                                                            <li><span class="upNm">신청 관련 부가 서류.pdf</span>
+                                                                <button type="button" class="btn-del">삭제</button>
+                                                            </li>
+                                                            <li><span class="upNm">신청관련부가서류.pdf</span>
+                                                                <button type="button" class="btn-del">삭제</button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                            </tbody>
+                        </table>
+
+<script>
+$('input[name="usrtype"]').on('change', function () {
+  const id = $(this).attr('id');       // usrtype1 ~ usrtype4
+  const num = id.replace('usrtype', ''); // 1~4 추출
+
+  // 모든 tr 숨기기
+  $('[class^="selectType"]').hide();
+
+  // 선택된 것만 보여주기
+  $(`.selectType0${num}`).show();
+});
+</script>
+
+
+                        <div class="wd100 btnbox-r mt20">
+                            <a href="javascript:void(0);" class="wzbtn btn-save">저장</a> 
+                            <a href="javascript:void(0);" class="wzbtn btn-basic fl">목록</a> 
+                        </div>
+
+
+
+                </div>
+
+
+                <!-- /내용 끝 -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+    <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/script.js"></script>
+    </body>
+</html>
