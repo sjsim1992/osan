@@ -45,108 +45,110 @@
                 내용부분
                 -->
 
-                <div class="osanSrchbox txt-l"> <!-- 관리자페이지의 목록에쓰인 검색바에서는 wzAdmSrchbox 클래스이고 osanSrchbox 로만 바뀌었습니다 ! -->
-                    <ul class="wzForm mt10 i-block mr30">
-                        <li class="i-block mr20">
-                            <label>
-                                <input id="selectState01" name="selectState" type="radio">
-                                <span class="spanLabel">전체</span>
-                            </label>
-                        </li>
-                        <li class="i-block mr20">
-                            <label>
-                                <input id="selectState02" name="selectState" type="radio">
-                                <span class="spanLabel">준비중</span>
-                            </label>
-                        </li>
-                        <li class="i-block">
-                            <label>
-                                <input id="selectState03" name="selectState" type="radio">
-                                <span class="spanLabel">접수중</span>
-                            </label>
-                        </li>
-                        <li class="i-block">
-                            <label>
-                                <input id="selectState03" name="selectState" type="radio">
-                                <span class="spanLabel">마감</span>
-                            </label>
-                        </li>
-                    </ul>
-                    <select>
-                        <option>제목</option>
-                    </select>
-                    <input type="text" placeholder="검색어를 입력하세요">
-                    <a href="javascript:void(0);" class="mb10 mt10 wzbtn btn-srch" onclick="fnSearch(1);">검색</a>
+                <div class="osan_usrWrap"> 
+                    <!-- 01_프로그램신청관리_관리자_목록.html  에 들어갔던 내용 거의 고~대로 들어갔고 가장 바깥에 osan_usrWrap 로 한번만 감싸줬습니다 !! -->
+                    <div class="wzAdmSrchbox txt-l">
+                        <ul class="wzForm mt10 i-block mr30">
+                            <li class="i-block mr20">
+                                <label>
+                                    <input id="selectState01" name="selectState" type="radio">
+                                    <span class="spanLabel">전체</span>
+                                </label>
+                            </li>
+                            <li class="i-block mr20">
+                                <label>
+                                    <input id="selectState02" name="selectState" type="radio">
+                                    <span class="spanLabel">준비중</span>
+                                </label>
+                            </li>
+                            <li class="i-block mr20">
+                                <label>
+                                    <input id="selectState03" name="selectState" type="radio">
+                                    <span class="spanLabel">접수중</span>
+                                </label>
+                            </li>
+                            <li class="i-block">
+                                <label>
+                                    <input id="selectState03" name="selectState" type="radio">
+                                    <span class="spanLabel">마감</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <select>
+                            <option>제목</option>
+                        </select>
+                        <input type="text" placeholder="검색어를 입력하세요">
+                        <a href="javascript:void(0);" class="mb10 mt10 wzbtn btn-srch" onclick="fnSearch(1);">검색</a>
+                    </div>
+
+                    <div class="wd100 fl rt-box mt10 mb10">
+                        <span class="fs15 fl linehgt40">총 7건</span>
+                        <select name="pageUnit">
+                            <option value="10" selected=""> 10개 </option>
+                            <option value="20"> 20개 </option>
+                            <option value="50"> 50개 </option>
+                            <option value="100"> 100개 </option>
+                        </select>
+                    </div>
+
+                    <table class="basic-table">
+                        <colgroup>
+                            <col width="5%">
+                            <col width="*">
+                            <col width="25%">
+                            <col width="10%">
+                            <col width="15%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">접수기간</th>
+                                <th scope="col">상태</th>
+                                <th scope="col">신청</th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="txt-l">2025년 하반기 고등학생 장학금</td>
+                                <td>2025.09.15 00:00 ~ 2025.09.19 23:59</td>
+                                <td>
+                                    <span class="circle_badge bg-orange-strong br3 vert-m">준비중</span>
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td class="txt-l">2025년 하반기 고등학생 장학금</td>
+                                <td>2025.09.15 00:00 ~ 2025.09.19 23:59</td>
+                                <td>
+                                    <span class="circle_badge bg-blue-strong br3 vert-m">접수중</span>
+                                </td>
+                                <td>
+                                    <a href="01_프로그램신청관리_사용자_2신청하기.html" class="wzbtn btn-edit" title="신청하기">신청하기</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td class="txt-l">2025년 하반기 고등학생 장학금</td>
+                                <td>2025.09.15 00:00 ~ 2025.09.19 23:59</td>
+                                <td>
+                                    <span class="circle_badge bg-grey-strong br3 vert-m">마감</span>
+                                </td>
+                                <td>
+                                    -
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                 </div>
-
-                <div class="wd100 fl rt-box mt10 mb10">
-                    <span class="fs15 fl linehgt40">총 7건</span>
-                    <select name="pageUnit">
-                        <option value="10" selected=""> 10개 </option>
-                        <option value="20"> 20개 </option>
-                        <option value="50"> 50개 </option>
-                        <option value="100"> 100개 </option>
-                    </select>
-                </div>
-
-                <table class="basic-table">
-                    <colgroup>
-                        <col width="5%">
-                        <col width="*">
-                        <col width="25%">
-                        <col width="10%">
-                        <col width="15%">
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th scope="col">No</th>
-                            <th scope="col">제목</th>
-                            <th scope="col">접수기간</th>
-                            <th scope="col">상태</th>
-                            <th scope="col">신청</th>
-                        </tr>
-                    </thead>
-                
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td class="txt-l">2025년 하반기 고등학생 장학금</td>
-                            <td>2025.09.15 00:00 ~ 2025.09.19 23:59</td>
-                            <td>
-                                <span class="circle_badge bg-orange-strong br3 vert-m">준비중</span>
-                            </td>
-                            <td>
-                                -
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>2</td>
-                            <td class="txt-l">2025년 하반기 고등학생 장학금</td>
-                            <td>2025.09.15 00:00 ~ 2025.09.19 23:59</td>
-                            <td>
-                                <span class="circle_badge bg-blue-strong br3 vert-m">접수중</span>
-                            </td>
-                            <td>
-                                <a href="01_프로그램신청관리_사용자_2신청하기.html" class="wzbtn btn-edit" title="신청하기">신청하기</a>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>3</td>
-                            <td class="txt-l">2025년 하반기 고등학생 장학금</td>
-                            <td>2025.09.15 00:00 ~ 2025.09.19 23:59</td>
-                            <td>
-                                <span class="circle_badge bg-grey-strong br3 vert-m">마감</span>
-                            </td>
-                            <td>
-                                -
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-
 
 
 
