@@ -30,6 +30,7 @@ table.basic.basic-narrow .necessary:hover div { display: inline-block; clip:auto
 table.basic.basic-narrow tr[class *="select"] td .wzForm>li {margin-right:0;width: 100%;}
 table.basic.basic-narrow tr[class *="select"] td .wzForm>li ~ li {margin-top:5px;}
 table.basic.basic-narrow tr[class *="select"] td .wzForm>li label {width: 240px;display: inline-block;vertical-align: top;}
+table.basic.basic-narrow tr[class *="select"] td .wzForm>li label .spanLabel {position: relative;}
 table.basic.basic-narrow tr[class *="select"] td .wzForm>li label .necessary {top: 11px;}
 table.basic.basic-narrow tr[class *="select"] td .wzForm>li label ~ div input[type="text"] {color:#838383;font-size: 14px;}
 table.basic.basic-narrow tr[class *="select"] td .wzForm>li .wzbtn-table {padding: 0 10px !important; font-size: 14px; line-height: 38px;}
