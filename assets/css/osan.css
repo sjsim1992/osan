@@ -2,6 +2,8 @@
 @import url("common.css"); 
 @import url("widesigncore.css"); 
 
+/* last - 2025.11.20 SSJ */
+
 :root {
   --subCoSize:10px;
 
@@ -49,12 +51,12 @@ table.basic.basic-narrow tr[class *="select"] td .wzForm>li .wzbtn-table {paddin
 
 
 /* 파일 업로드 및 업로드목록 */
-.flieupListBox {width:100%; background:#f9f9f9; border:1px dashed #ddd; padding:10px; box-sizing:border-box; border-radius:10px; display:flex; gap:10px; clear:both; margin-top:10px;}
+.flieupListBox {width:100%;background:#f9f9f9;border:1px dashed #ddd;padding: 10px !important;box-sizing:border-box;border-radius:10px;display:flex;gap:10px;clear:both;margin-top:10px;}
 .flieupListBox:empty {padding:0; border:none;}
 .flieupListBox li {padding:0 10px;border:1px solid #ddd;border-radius:10px;background:#fff;margin-right: 0 !important;line-height:40px;overflow:hidden;}
 .flieupListBox li .upNm {font-size:14px; line-height:40px; margin-right:3px;}
-.flieupListBox li button.btn-del {text-indent:-999px; width:18px; height:18px; border:1px solid #c20000; border-radius:100%; position:relative; box-sizing:border-box; margin-top:-2px;}
-.flieupListBox li button.btn-del:before {content:"X"; /* color:#c20000; */text-indent:0px; position:absolute; left:0; top:0; width:100%; height:100%; font-size:10px; text-align:center; font-weight:600;}
+.flieupListBox li button.btn-del {text-indent:-999px;width:18px;height: 19px;line-height: 19px;border:1px solid #c20000;border-radius:100%;position:relative;box-sizing:border-box;margin-top: -3px;margin-left: 5px;}
+.flieupListBox li button.btn-del:before {content:"X";/* color:#c20000; */text-indent:0px;position:absolute;left:0;top:0;width:100%;height:100%;font-size:10px;text-align:center;font-weight:600;font-family: 'NanumSquareR';}
     @media (max-width:899px){
         .flieupListBox {flex-direction:column; gap:5px;}
         .flieupListBox li {line-height:35px;}
@@ -70,13 +72,17 @@ table.basic.basic-narrow tr[class *="select"] td .wzForm>li .wzbtn-table {paddin
 */
 /* 장학금 신청프로그램 목록 */
 /* ++ 관리자단 구조의 가장 바깥에 osan_usrWrap 클래스로 감싸져있는 상태 */
-.osan_usrWrap {font-size: var(--subCoSize);}
+.osan_usrWrap {width: 100%;font-size: var(--subCoSize); float: left;}
+.osan_usrWrap:last-child, .osan_usrWrap + #pageInfo:last-child {margin-bottom: 130px;}
 .osan_usrWrap .wzAdmSrchbox {background: #f8f9fa; padding: 25px 35px; text-align: center !important;}
 .osan_usrWrap .wzAdmSrchbox ul {}
-.osan_usrWrap .wzAdmSrchbox .wzForm label>input[type="radio"] + .spanLabel {font-size: 17px; font-family: 'esamanru'; font-weight: 300;}
-.osan_usrWrap .wzAdmSrchbox select {background-color:#fff;border-radius: 10px;}
-.osan_usrWrap .wzAdmSrchbox input[type="text"] {border-radius: 10px;}
+.osan_usrWrap .wzAdmSrchbox .wzForm label>input[type="radio"] + .spanLabel {font-size: 16px;font-family: 'esamanru';font-weight: 300;}
+.osan_usrWrap .wzAdmSrchbox .wzForm label>input[type="radio"] + .spanLabel:before {top: 5px;}
+.osan_usrWrap .wzAdmSrchbox .wzForm label>input[type="radio"] + .spanLabel:after  {top: 10px;}
+.osan_usrWrap .wzAdmSrchbox select {background-color:#fff;border-radius: 10px;font-size: 15px;}
+.osan_usrWrap .wzAdmSrchbox input[type="text"] {border-radius: 10px;font-size: 15px;}
 .osan_usrWrap .wzAdmSrchbox .btn-srch {border-radius: 10px;line-height: 38px;}
+.osan_usrWrap .wzAdmSrchbox + div #pageUnit {font-size:15px;}
 
 .osan_usrWrap .basic-table {border-collapse: separate;border-spacing: 0 10px;border-bottom: none;}
 .osan_usrWrap .basic-table thead tr {background:transparent;}
@@ -87,6 +93,13 @@ table.basic.basic-narrow tr[class *="select"] td .wzForm>li .wzbtn-table {paddin
 .osan_usrWrap .basic-table tbody tr td .btn-edit {}
 .osan_usrWrap .basic-table tbody tr td:first-child {border-radius: 20px 0 0 20px;}
 .osan_usrWrap .basic-table tbody tr td:last-child  {border-radius: 0 20px 20px 0;}
+.osan_usrWrap .basic-table tbody tr td:only-child  {border-radius:20px;}
+
+    @media (max-width:990px){
+        .osan_usrWrap .wzAdmSrchbox ul {margin:0 0 10px; width:100%;}
+    }
+
+
 
 
 
